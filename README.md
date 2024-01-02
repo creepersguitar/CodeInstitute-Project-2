@@ -23,3 +23,11 @@ visit the live site [here!] ()
 ### font-choices
 
 ### colour choices
+
+### Images
+
+## Features
+
+![]()
+
+### Potential Future features
