@@ -31,3 +31,25 @@ visit the live site [here!] ()
 ![]()
 
 ### Potential Future features
+
+## UX
+
+### Site Goals
+
+## Testing
+
+### Fixed Bugs
+
+### Unfixed Bugs
+
+### Validation Testing
+
+### Browser Testing
+
+### Manual Testing
+
+## Deployment
+
+## Sources
+
+## Credits
