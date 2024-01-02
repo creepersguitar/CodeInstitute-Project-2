@@ -7,9 +7,9 @@ This is the wintersome-quiz website. A website designed to test users on the win
 visit the live site [here!] ()
 
 ## Contents
-1.
-2.
-3.
-4.
-5.
-6.
+1. [Design](#design)
+2. [Features](#features)
+3. [UX](#ux)
+4. [Testing](#testing)
+5. [Sources](#sources)
+6. [Credits](#credits)
