@@ -46,8 +46,17 @@ visit the live site [here!] ()
 
 ### Browser Testing
 
+| Browser | Layout | Functionality | (Table Taken from MariaHochstoeger. The results are my own.)
+| :.....: | :....: | :...........: |
+|
+|
+|
 ### Manual Testing
-
+|
+|
+|
+|
+|
 ## Deployment
 This site was deployed on Github Pages:
 - From the repository you are in, first navigate to "Settings" (This is at the top of the page).
