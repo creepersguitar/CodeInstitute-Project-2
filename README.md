@@ -48,9 +48,11 @@ visit the live site [here!] ()
 
 | Browser | Layout | Functionality | (Table Taken from MariaHochstoeger. The results are my own.)
 | :.....: | :....: | :...........: |
-|
-|
-|
+| Safari  |
+| Chrome  |
+| Edge    |
+| Firefox |
+| IE      | Depreciated by microsoft not needed to test |
 ### Manual Testing
 |
 |
