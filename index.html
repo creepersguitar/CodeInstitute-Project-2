@@ -15,7 +15,9 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header></header>
+    <header>
+        <h2> Winter Quiz</h2>
+    </header>
     <main>
         <div class="container">
             <h1></h1>
@@ -25,7 +27,7 @@
             <button id="Answer3" onclick="check(2)"></button>
             <button id="Answer4" onclick="check(3)"></button>
             <hr>
-            <div><span id="score"></span></div>
+            <div>Score: <span id="score">0</span></div>
             <div id="play-Again">
                 <p>Would you like to play again?</p>
                 <button onclick="endOption(0)">Yes</button>
@@ -34,7 +36,10 @@
         </div>
     </main>
     <footer>
+        <hr>
         <!-- Rules -->
+        <h3>The Rules</h3>
+        <p> Click button once you work out answer to the question</p>
     </footer>
     <script src="assets/javascript/script.js"></script>
 </body>
