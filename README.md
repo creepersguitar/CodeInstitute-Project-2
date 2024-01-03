@@ -54,8 +54,8 @@ visit the live site [here!] ()
 | Firefox |
 | IE      | Depreciated by microsoft not needed to test |
 ### Manual Testing
-|
-|
+| Feature | Expect | Action | Result | (Table Taken from MariaHochstoeger. The results are my own.)
+| :.....: | :....: | :....: | :....: |
 |
 |
 |
