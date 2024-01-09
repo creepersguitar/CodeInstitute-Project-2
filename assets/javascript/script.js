@@ -98,6 +98,12 @@ const christmasQuestions = [
     },
 ]
 
+const Qlength = christmasQuestions.length;
+
+function loadGameQuestion(questionNumber) {
+    question.innerHTML = christmasQuestions[questionNumber].question;
+}
+
 
 function endOption(chosenOpt) {
 
