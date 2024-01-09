@@ -97,14 +97,27 @@ const christmasQuestions = [
         "correct" : 4
     },
 ]
-
+/**
+ * variable to store the number of questions
+ */
 const Qlength = christmasQuestions.length;
-
+/**
+ * function to load the question to the page
+ */
 function loadGameQuestion(questionNumber) {
     question.innerHTML = christmasQuestions[questionNumber].question;
 }
 
-
+/**
+ * function to load the answer to the question
+ */
+function loadGameAnswer(answerNumber) {
+    answer1.innerHTML = christmasQuestions[QNumber].answers[answerNumber];
+    answer2.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 1];
+    answer3.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 2];
+    answer4.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 3];
+    answer5.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 4];
+}
 function endOption(chosenOpt) {
 
 }
