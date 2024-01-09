@@ -118,6 +118,29 @@ function loadGameAnswer(answerNumber) {
     answer4.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 3];
     answer5.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 4];
 }
+/**
+ * 
+ * checks what answer is clicked to see if it is correct
+ * and if its the end of the quiz
+ */
+function check(ansnum) {
+    // tells user what button is clicked
+    console.log("Button clicked is: ", ansnum);
+    // check if the answer is correct
+    let correct = christmasQuestions[QNumber].correct;
+    if (ansnum === correct) {
+        scoreNumber += 1;
+        score.innerHTML = scoreNumber;
+        console.log("correct Well Done!");
+    }
+    // increment the question number
+        questionNumber += 1;
+        if (questionNumber === Qlength) {
+            // tells user that the game is over and makes visible the play again button
+            console.log("Game Over!");
+            endGameFunc();
+        }
+}
 function endOption(chosenOpt) {
 
 }
