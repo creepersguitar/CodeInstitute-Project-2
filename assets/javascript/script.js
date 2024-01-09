@@ -141,6 +141,13 @@ function check(ansnum) {
             endGameFunc();
         }
 }
+/**
+ * makes the play again section visible
+ */
+function endGameFunc() {
+    again.style.visibility = "visible";
+}
+
 function endOption(chosenOpt) {
 
 }
