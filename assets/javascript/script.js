@@ -160,3 +160,16 @@ function endOption(chosenOpt) {
         window.location.href="https://www.google.com";
     }
 }
+
+/**
+ * function to start the game
+ */
+function startchristmasQuiz() {
+    // hides the play again button
+    playAgain.style.visibility="hidden";
+    // loads game questions and answers
+    loadGameQuestion(questionNumber);
+    loadGameAnswer(questionNumber);
+}
+// starts the script
+startchristmasQuiz()
