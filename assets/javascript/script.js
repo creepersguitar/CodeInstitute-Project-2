@@ -148,6 +148,15 @@ function endGameFunc() {
     again.style.visibility = "visible";
 }
 
+/**
+ * function to end the game
+ */
 function endOption(chosenOpt) {
-
+    if (chosenOpt === 0) {
+        window.location.reload()
+    } else {
+        console.log("Good bye and merry christmas!");
+        console.log("You will be redirected to google");
+        window.location.href="https://www.google.com";
+    }
 }
