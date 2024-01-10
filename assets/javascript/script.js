@@ -120,8 +120,7 @@ function loadGameAnswer(answerNumber) {
 }
 /**
  * 
- * checks what answer is clicked to see if it is correct
- * and if its the end of the quiz
+ * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
     // tells user what button is clicked
@@ -141,13 +140,13 @@ function check(ansnum) {
             endGameFunc();
         }
 }
+
 /**
  * makes the play again section visible
  */
 function endGameFunc() {
     again.style.visibility = "visible";
 }
-
 /**
  * function to end the game
  */
@@ -160,7 +159,6 @@ function endOption(chosenOpt) {
         window.location.href="https://www.google.com";
     }
 }
-
 /**
  * function to start the game
  */
