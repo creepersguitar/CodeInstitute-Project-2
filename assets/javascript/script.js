@@ -104,7 +104,7 @@ const Qlength = christmasQuestions.length;
 /**
  * function to load the question to the page
  */
-function loadGameQuestion(questionNumber) {
+function loadGameQuestion(QNumber) {
     question.innerHTML = christmasQuestions[questionNumber].question;
 }
 
@@ -133,8 +133,8 @@ function check(ansnum) {
         console.log("correct Well Done!");
     }
     // increment the question number
-        questionNumber += 1;
-        if (questionNumber === Qlength) {
+        QNumber += 1;
+        if (QNumber === Qlength) {
             // tells user that the game is over and makes visible the play again button
             console.log("Game Over!");
             endGameFunc();
@@ -166,8 +166,8 @@ function startchristmasQuiz() {
     // hides the play again button
     playAgain.style.visibility="hidden";
     // loads game questions and answers
-    loadGameQuestion(questionNumber);
-    loadGameAnswer(questionNumber);
+    loadGameQuestion(QNumber);
+    loadGameAnswer(QNumber);
 }
 // starts the script
 startchristmasQuiz()

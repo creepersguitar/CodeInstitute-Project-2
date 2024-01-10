@@ -43,7 +43,7 @@ visit the live site [here!] ()
  
  - line 167, the variable "playAgain" should've been "again" which it now is.
 ### Unfixed Bugs
-
+- None as all bugs are fixed
 ### Validation Testing
 
 ### Browser Testing
