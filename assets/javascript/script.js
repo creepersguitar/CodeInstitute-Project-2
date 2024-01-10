@@ -105,7 +105,7 @@ const Qlength = christmasQuestions.length;
  * function to load the question to the page
  */
 function loadGameQuestion(QNumber) {
-    question.innerHTML = christmasQuestions[questionNumber].question;
+    question.innerHTML = christmasQuestions[QNumber].question;
 }
 
 /**
@@ -167,7 +167,7 @@ function startchristmasQuiz() {
     again.style.visibility="hidden";
     // loads game questions and answers
     loadGameQuestion(QNumber);
-    loadGameAnswer(scoreNumber);
+    loadGameAnswer(QNumber);
 }
 // starts the script
 startchristmasQuiz()
