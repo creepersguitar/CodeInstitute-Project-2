@@ -39,7 +39,9 @@ visit the live site [here!] ()
 ## Testing
 
 ### Fixed Bugs
-
+ - used a undelcared variable in the JavaScript File but i made sure that the variable now works throughout the program on lines: 169,170,136,137 and 107.
+ 
+ - line 167, the variable "playAgain" should've been "again" which it now is.
 ### Unfixed Bugs
 
 ### Validation Testing
