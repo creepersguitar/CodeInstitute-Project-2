@@ -167,7 +167,7 @@ function startchristmasQuiz() {
     again.style.visibility="hidden";
     // loads game questions and answers
     loadGameQuestion(QNumber);
-    loadGameAnswer(QNumber);
+    loadGameAnswer(scoreNumber);
 }
 // starts the script
 startchristmasQuiz()

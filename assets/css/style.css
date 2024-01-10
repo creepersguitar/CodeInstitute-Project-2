@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap');
+
+header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #cc3e5c;
+}
+header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+#Question {
+    height: 700px;
+    width: 100%;
+    background: url(assets/images/kelly-sikkema-background.webp) no-repeat center center/cover;
+}
