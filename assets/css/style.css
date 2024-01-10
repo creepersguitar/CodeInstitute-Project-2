@@ -19,5 +19,33 @@ main {
 #hero {
     height: 700px;
     width: 100%;
-    background: url(assets/images/kelly-sikkema-background.webp) no-repeat center center/cover;
+    background: url(assets/images/annie-spratt-hero.webp) no-repeat center center/cover;
+}
+button {
+    background-color: #60993e;
+    color: #1f363d;
+    padding: 10px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b2ca;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#play-Again {
+    margin-top: 25px;
+    visibility: hidden;
+}
+
+footer {
+    background-color: #00b2ca;
+    color: #000;
 }
