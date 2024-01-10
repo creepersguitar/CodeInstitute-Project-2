@@ -164,7 +164,7 @@ function endOption(chosenOpt) {
  */
 function startchristmasQuiz() {
     // hides the play again button
-    playAgain.style.visibility="hidden";
+    again.style.visibility="hidden";
     // loads game questions and answers
     loadGameQuestion(QNumber);
     loadGameAnswer(QNumber);
