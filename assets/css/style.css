@@ -58,6 +58,8 @@ button:hover {
 #score {
     font-size: 20px;
     font-weight: bold;
+    background-color: #cc3e5c;
+    color: #fff;
 }
 
 #play-Again {
