@@ -4,7 +4,7 @@
 
 This is the wintersome-quiz website. A website designed to test users on the winter season.
 
-visit the live site [here!] ()
+visit the live site [here!] (https://creepersguitar.github.io/CodeInstitute-Project-2/)
 
 ## Contents
 1. [Design](#design)
@@ -17,7 +17,7 @@ visit the live site [here!] ()
 
 ## Design
 
-### Wireframe Designs
+### Wireframe Design
 
 ![]
 ### font-choices
@@ -31,12 +31,14 @@ visit the live site [here!] ()
 ![]()
 
 ### Potential Future features
-
+ - add more difficult questions
+ - add a difficulty system
+ - link to a question generator
 ## UX
-
 ### Site Goals
-
+The site wants to attract users that want to experience a fun quiz about all things christmas.(including shows, films, important dates and more!)
 ## Testing
+ - i have confirmed that the website is responsive by making use of media queries from 280px - 1024px
 
 ### Fixed Bugs
  - used a undelcared variable in the JavaScript File but i made sure that the variable now works throughout the program on lines: 169,170,136,137 and 107.

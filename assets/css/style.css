@@ -43,11 +43,12 @@ main {
 button {
     background-color: #60993e;
     color: #1f363d;
-    padding: 10px 20px;
+    padding: 10px;
     margin: 8px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
@@ -62,4 +63,20 @@ button:hover {
 #play-Again {
     margin-top: 25px;
     visibility: hidden;
+}
+
+footer {
+    background-color: #cc3e5c;
+    color: #fff;
+}
+
+@media screen and (min-width: 280px) {
+    header h2 {
+        font-size: 24px;
+    }
+
+    #hero-text {
+        margin-top: 80%;
+        width: 100%;
+    }
 }
