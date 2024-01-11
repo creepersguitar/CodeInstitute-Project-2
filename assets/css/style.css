@@ -112,3 +112,66 @@ footer {
         padding: 5%;
     }
 }
+@media screen and (min-width: 1024px) {
+    #hero {
+        padding-right: 20px;
+    }
+    #hero-text {
+        margin-top: 25%;
+    }
+    footer h3 {
+        margin-left: 24em;
+    }
+    footer p {
+        margin-left: 19em;
+    }
+}
+@media screen and (min-width: 1440px) {
+    #hero-text {
+        margin-top: 5%;
+        padding: 10%;
+    }
+    #Answer1 {
+        margin-right: 3rem;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #Answer2 {
+        margin-right: 3rem;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #Answer3 {
+        margin-right: 3rem;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #Answer4 {
+        margin-right: 3rem;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #Answer5 {
+        margin-right: 3rem;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #Question {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    #score {
+        padding: 1rem;
+        font-size: 35px;
+    }
+    footer h3 {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    footer p {
+        font-size: 25px;
+    }
+}
