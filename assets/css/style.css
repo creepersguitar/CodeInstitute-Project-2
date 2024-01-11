@@ -79,6 +79,36 @@ footer {
 
     #hero-text {
         margin-top: 80%;
-        width: 100%;
+        width: 50%;
+    }
+}
+
+/* media query for 320 pixels minimum */
+@media screen and (min-width: 320px) {
+    header h2 {
+        font-size: 26px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    #hero-text {
+        width: 60%;
+    }
+}
+/* media query for 375 pixels minimum */
+@media screen and (min-width: 375px) {
+    #hero-text {
+        margin-top: 70%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    #hero-text {
+        margin-top: 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    #hero-text {
+        margin-top: 30%;
+        padding: 5%;
     }
 }
