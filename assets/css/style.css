@@ -69,6 +69,7 @@ button:hover {
 
 footer {
     background-color: #cc3e5c;
+    color: #fff;
 }
 
 @media screen and (min-width: 280px) {
@@ -118,6 +119,12 @@ footer {
     #hero-text {
         margin-top: 25%;
     }
+    footer h3 {
+        margin-left: 24em;
+    }
+    footer p {
+        margin-left: 19em;
+    }
 }/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
     #hero-text {
@@ -159,5 +166,12 @@ footer {
     #score {
         padding: 1rem;
         font-size: 35px;
+    }
+    footer h3 {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    footer p {
+        font-size: 25px;
     }
 }
