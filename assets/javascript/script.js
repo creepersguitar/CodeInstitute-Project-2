@@ -15,7 +15,7 @@ const christmasQuestions = [
     {
         "question" : "What day is christmas day?",
         "answers" : [
-            "December 25th", "December 1st", "January 26th", "December 29th", "May 5th"
+            "December 1st", "December 25th", "January 26th", "December 29th", "May 5th"
         ],
         "correct" : 1
     },
@@ -111,7 +111,7 @@ function loadGameQuestion(QNumber) {
 /**
  * function to load the answer to the question
  */
-function loadGameAnswer(answerNumber) {
+function loadGameAnswer(QNumber) {
     answer1.innerText = christmasQuestions[QNumber].answers[0];
     answer2.innerText = christmasQuestions[QNumber].answers[1];
     answer3.innerText = christmasQuestions[QNumber].answers[2];
@@ -135,7 +135,7 @@ function check(ansnum) {
     }
     // increment the question number
     // changed from += 1; to ++
-    QNumber ++;
+    QNumber++;
     if (QNumber === Qlength) {
         // tells user that the game is over and makes visible the play again button
         console.log("Game Over!");
