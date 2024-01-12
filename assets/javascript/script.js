@@ -112,11 +112,11 @@ function loadGameQuestion(QNumber) {
  * function to load the answer to the question
  */
 function loadGameAnswer(answerNumber) {
-    answer1.innerText = christmasQuestions[QNumber].answers[answerNumber];
-    answer2.innerText = christmasQuestions[QNumber].answers[answerNumber + 1];
-    answer3.innerText = christmasQuestions[QNumber].answers[answerNumber + 2];
-    answer4.innerText = christmasQuestions[QNumber].answers[answerNumber + 3];
-    answer5.innerText = christmasQuestions[QNumber].answers[answerNumber + 4];
+    answer1.innerText = christmasQuestions[QNumber].answers[0];
+    answer2.innerText = christmasQuestions[QNumber].answers[1];
+    answer3.innerText = christmasQuestions[QNumber].answers[2];
+    answer4.innerText = christmasQuestions[QNumber].answers[3];
+    answer5.innerText = christmasQuestions[QNumber].answers[4];
 }
 /**
  * 
@@ -129,13 +129,13 @@ function check(ansnum) {
     let correct = christmasQuestions[QNumber].correct;
     if (ansnum === correct) {
         // increment score - changed from += 1; to ++
-        scoreNumber ++
+        scoreNumber ++;
         score.innerHTML = scoreNumber;
         console.log("correct Well Done!");
     }
     // increment the question number
     // changed from += 1; to ++
-    QNumber ++
+    QNumber ++;
     if (QNumber === Qlength) {
         // tells user that the game is over and makes visible the play again button
         console.log("Game Over!");
