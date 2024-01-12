@@ -128,16 +128,22 @@ function check(ansnum) {
     // check if the answer is correct
     let correct = christmasQuestions[QNumber].correct;
     if (ansnum === correct) {
-        scoreNumber += 1;
+        // increment score - changed from += 1; to ++
+        scoreNumber ++
         score.innerHTML = scoreNumber;
         console.log("correct Well Done!");
     }
     // increment the question number
-        QNumber += 1;
+    // changed from += 1; to ++
+        QNumber ++
         if (QNumber === Qlength) {
             // tells user that the game is over and makes visible the play again button
             console.log("Game Over!");
             endGameFunc();
+            // added else and calling functions to fix bug
+        } else {
+            loadGameQuestion(QNumber);
+            loadGameAnswer(QNumber);
         }
 }
 
