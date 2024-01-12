@@ -79,6 +79,7 @@ main {
     position: relative;
 }
 #hero-text {
+    display: none;
     background-color: rgba(204, 62, 92, 0.7);
     position: absolute;
     top: 50%;

@@ -96,32 +96,29 @@ const christmasQuestions = [
         "correct" : 4
     },
 ];
-/**
- * variable to store the number of questions
- */
+// variable to store the number of questions
 const qlength = christmasQuestions.length;
+
 // Get the modal, button, and span elements
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // Attach event listeners to open and close the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-};
-
+btn.onclick = showModal;
 span.onclick = function () {
     modal.style.display = "none";
 };
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 };
+
 function closeModal() {
     modal.style.display = "none";
-  }
+}
 
 /**
  * function to load the question to the page
@@ -140,46 +137,36 @@ function loadGameAnswer(qNumber) {
     answer4.innerText = christmasQuestions[qNumber].answers[3];
     answer5.innerText = christmasQuestions[qNumber].answers[4];
 }
+
 /**
- * 
  * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
     // check if the answer is correct
     let correct = christmasQuestions[qNumber].correct;
     if (ansnum === correct) {
-        // increment score - changed from += 1; to ++
-        scoreNumber ++;
+        // increment score
+        scoreNumber++;
         score.innerHTML = scoreNumber;
     }
     // increment the question number
-    // changed from += 1; to ++
     qNumber++;
     if (qNumber === qlength) {
         // makes visible the play again button
         endGameFunc();
-        // added else and calling functions to fix bug
     } else {
         loadGameQuestion(qNumber);
         loadGameAnswer(qNumber);
     }
 }
-// Get the modal, button, and span elements
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
 
-// Attach event listeners to open and close the modal
-btn.onclick = showModal;
-span.onclick = function () {
-  modal.style.display = "none";
-};
 /**
  * makes the play again section visible
  */
 function endGameFunc() {
     again.style.visibility = "visible";
 }
+
 /**
  * function to end the game
  */
@@ -187,18 +174,36 @@ function endOption(chosenOpt) {
     if (chosenOpt === 0) {
         window.location.reload();
     } else {
-        window.location.href="https://www.google.com";
+        window.location.href = "https://www.google.com";
     }
 }
+
 /**
  * function to start the game
  */
 function startchristmasQuiz() {
     // hides the play again button
-    again.style.visibility="hidden";
+    again.style.visibility = "hidden";
     // loads game questions and answers
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
 }
+
+/**
+ * Function to show the modal and start the quiz
+ */
+function showModal() {
+    modal.style.display = "block";
+    document.getElementById("hero-text").style.display = "block"; // Show the hero-text
+
+    // Initialize the game
+    qNumber = 0;
+    scoreNumber = 0;
+
+    // Load the first question and answers
+    loadGameQuestion(qNumber);
+    loadGameAnswer(qNumber);
+}
+
 // starts the script
 startchristmasQuiz();
