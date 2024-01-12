@@ -96,7 +96,7 @@ const christmasQuestions = [
         ],
         "correct" : 4
     },
-]
+];
 /**
  * variable to store the number of questions
  */
@@ -123,22 +123,18 @@ function loadGameAnswer(QNumber) {
  * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
-    // tells user what button is clicked
-    console.log("Button clicked is: ", ansnum);
     // check if the answer is correct
     let correct = christmasQuestions[QNumber].correct;
     if (ansnum === correct) {
         // increment score - changed from += 1; to ++
         scoreNumber ++;
         score.innerHTML = scoreNumber;
-        console.log("correct Well Done!");
     }
     // increment the question number
     // changed from += 1; to ++
     QNumber++;
     if (QNumber === Qlength) {
-        // tells user that the game is over and makes visible the play again button
-        console.log("Game Over!");
+        // makes visible the play again button
         endGameFunc();
         // added else and calling functions to fix bug
     } else {
@@ -158,10 +154,8 @@ function endGameFunc() {
  */
 function endOption(chosenOpt) {
     if (chosenOpt === 0) {
-        window.location.reload()
+        window.location.reload();
     } else {
-        console.log("Good bye and merry christmas!");
-        console.log("You will be redirected to google");
         window.location.href="https://www.google.com";
     }
 }
@@ -176,4 +170,4 @@ function startchristmasQuiz() {
     loadGameAnswer(QNumber);
 }
 // starts the script
-startchristmasQuiz()
+startchristmasQuiz();
