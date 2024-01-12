@@ -1,5 +1,5 @@
 // getters
-const question = document.getElementById("Question");
+const question = document.getElementById("question");
 const answer1 = document.getElementById("Answer1");
 const answer2 = document.getElementById("Answer2");
 const answer3 = document.getElementById("Answer3");
@@ -8,7 +8,7 @@ const answer5 = document.getElementById("Answer5");
 const score = document.getElementById("score");
 const again = document.getElementById("play-Again");
 
-let QNumber = 0;
+let qNumber = 0;
 let scoreNumber = 0;
 
 const christmasQuestions = [
@@ -104,19 +104,19 @@ const Qlength = christmasQuestions.length;
 /**
  * function to load the question to the page
  */
-function loadGameQuestion(QNumber) {
-    question.innerText = christmasQuestions[QNumber].question;
+function loadGameQuestion(qNumber) {
+    question.innerText = christmasQuestions[qNumber].question;
 }
 
 /**
  * function to load the answer to the question
  */
-function loadGameAnswer(QNumber) {
-    answer1.innerText = christmasQuestions[QNumber].answers[0];
-    answer2.innerText = christmasQuestions[QNumber].answers[1];
-    answer3.innerText = christmasQuestions[QNumber].answers[2];
-    answer4.innerText = christmasQuestions[QNumber].answers[3];
-    answer5.innerText = christmasQuestions[QNumber].answers[4];
+function loadGameAnswer(qNumber) {
+    answer1.innerText = christmasQuestions[qNumber].answers[0];
+    answer2.innerText = christmasQuestions[qNumber].answers[1];
+    answer3.innerText = christmasQuestions[qNumber].answers[2];
+    answer4.innerText = christmasQuestions[qNumber].answers[3];
+    answer5.innerText = christmasQuestions[qNumber].answers[4];
 }
 /**
  * 
@@ -124,7 +124,7 @@ function loadGameAnswer(QNumber) {
  */
 function check(ansnum) {
     // check if the answer is correct
-    let correct = christmasQuestions[QNumber].correct;
+    let correct = christmasQuestions[qNumber].correct;
     if (ansnum === correct) {
         // increment score - changed from += 1; to ++
         scoreNumber ++;
@@ -132,14 +132,14 @@ function check(ansnum) {
     }
     // increment the question number
     // changed from += 1; to ++
-    QNumber++;
-    if (QNumber === Qlength) {
+    qNumber++;
+    if (qNumber === Qlength) {
         // makes visible the play again button
         endGameFunc();
         // added else and calling functions to fix bug
     } else {
-        loadGameQuestion(QNumber);
-        loadGameAnswer(QNumber);
+        loadGameQuestion(qNumber);
+        loadGameAnswer(qNumber);
     }
 }
 
@@ -166,8 +166,8 @@ function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility="hidden";
     // loads game questions and answers
-    loadGameQuestion(QNumber);
-    loadGameAnswer(QNumber);
+    loadGameQuestion(qNumber);
+    loadGameAnswer(qNumber);
 }
 // starts the script
 startchristmasQuiz();
