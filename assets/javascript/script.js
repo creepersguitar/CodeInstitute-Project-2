@@ -135,16 +135,16 @@ function check(ansnum) {
     }
     // increment the question number
     // changed from += 1; to ++
-        QNumber ++
-        if (QNumber === Qlength) {
-            // tells user that the game is over and makes visible the play again button
-            console.log("Game Over!");
-            endGameFunc();
-            // added else and calling functions to fix bug
-        } else {
-            loadGameQuestion(QNumber);
-            loadGameAnswer(QNumber);
-        }
+    QNumber ++
+    if (QNumber === Qlength) {
+        // tells user that the game is over and makes visible the play again button
+        console.log("Game Over!");
+        endGameFunc();
+        // added else and calling functions to fix bug
+    } else {
+        loadGameQuestion(QNumber);
+        loadGameAnswer(QNumber);
+    }
 }
 
 /**
