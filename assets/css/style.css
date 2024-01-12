@@ -36,7 +36,7 @@ main {
     width: 80%;
 }
 
-#Question {
+#question {
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -132,32 +132,32 @@ footer {
         margin-top: 5%;
         padding: 10%;
     }
-    #Answer1 {
+    #answerOne {
         margin-right: 3rem;
         padding: 10px;
         font-size: 25px;
     }
-    #Answer2 {
+    #answerTwo {
         margin-right: 3rem;
         padding: 10px;
         font-size: 25px;
     }
-    #Answer3 {
+    #answerThree {
         margin-right: 3rem;
         padding: 10px;
         font-size: 25px;
     }
-    #Answer4 {
+    #answerFour {
         margin-right: 3rem;
         padding: 10px;
         font-size: 25px;
     }
-    #Answer5 {
+    #answerFive {
         margin-right: 3rem;
         padding: 10px;
         font-size: 25px;
     }
-    #Question {
+    #question {
         font-size: 40px;
     }
     header h2 {
