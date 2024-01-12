@@ -100,7 +100,7 @@ const christmasQuestions = [
 /**
  * variable to store the number of questions
  */
-const Qlength = christmasQuestions.length;
+const qlength = christmasQuestions.length;
 /**
  * function to load the question to the page
  */
@@ -133,7 +133,7 @@ function check(ansnum) {
     // increment the question number
     // changed from += 1; to ++
     qNumber++;
-    if (qNumber === Qlength) {
+    if (qNumber === qlength) {
         // makes visible the play again button
         endGameFunc();
         // added else and calling functions to fix bug
