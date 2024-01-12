@@ -44,7 +44,7 @@
     right: 10px;
     background-color: #60993e;
     color: #1f363d;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -63,7 +63,7 @@ header {
 }
 header h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
 }
 
@@ -131,7 +131,7 @@ footer {
 
 @media screen and (min-width: 280px) {
     header h2 {
-        font-size: 24px;
+        font-size: 10px;
     }
 
     #hero-text {
@@ -143,7 +143,7 @@ footer {
 /* media query for 320 pixels minimum */
 @media screen and (min-width: 320px) {
     header h2 {
-        font-size: 26px;
+        font-size: 14px;
         padding: 20px;
         margin-top: 10px;
     }
