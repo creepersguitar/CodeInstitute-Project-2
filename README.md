@@ -52,7 +52,7 @@ The site wants to attract users that want to experience a fun quiz about all thi
 
 | Browser | Layout | Functionality | (Table Taken from MariaHochstoeger. The results are my own.)
 | :.....: | :....: | :...........: |
-| Safari  |
+| Safari  | ✔     | ✔             |
 | Chrome  |
 | Edge    |
 | Firefox |
