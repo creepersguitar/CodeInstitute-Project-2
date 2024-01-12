@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap');
-body {
-    background-color: #60993e;
-}
+
 header {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
@@ -17,6 +15,7 @@ header h2 {
 main {
     padding: 20px;
     text-align: center;
+    background-color: #60993e;
 }
 #hero {
     height: 700px;
