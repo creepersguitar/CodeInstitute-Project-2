@@ -7,33 +7,6 @@ const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("score");
 const again = document.getElementById("play-Again");
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-    btn.classList.toggle("clicked");
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-    btn.classList.remove("clicked");
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        btn.classList.remove("clicked");
-    }
-};
 let qNumber = 0;
 let scoreNumber = 0;
 
@@ -127,6 +100,25 @@ const christmasQuestions = [
  * variable to store the number of questions
  */
 const qlength = christmasQuestions.length;
+// Get the modal, button, and span elements
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+// Attach event listeners to open and close the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+};
+
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
 function closeModal() {
     modal.style.display = "none";
   }
