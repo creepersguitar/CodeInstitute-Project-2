@@ -33,6 +33,7 @@ main {
     color: white;
     border-radius: 10px;
     width: 80%;
+    margin-bottom: 500px;
 }
 
 #Question {
@@ -125,7 +126,7 @@ footer {
     footer p {
         margin-left: 19em;
     }
-}
+}/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
     #hero-text {
         margin-top: 5%;

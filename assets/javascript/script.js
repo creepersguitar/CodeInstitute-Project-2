@@ -9,7 +9,7 @@ const score = document.getElementById("score");
 const again = document.getElementById("play-Again");
 
 let QNumber = 0;
-let scoreNumber = 0
+let scoreNumber = 0;
 
 const christmasQuestions = [
     {
@@ -105,18 +105,18 @@ const Qlength = christmasQuestions.length;
  * function to load the question to the page
  */
 function loadGameQuestion(QNumber) {
-    question.innerHTML = christmasQuestions[QNumber].question;
+    question.innerText = christmasQuestions[QNumber].question;
 }
 
 /**
  * function to load the answer to the question
  */
 function loadGameAnswer(answerNumber) {
-    answer1.innerHTML = christmasQuestions[QNumber].answers[answerNumber];
-    answer2.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 1];
-    answer3.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 2];
-    answer4.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 3];
-    answer5.innerHTML = christmasQuestions[QNumber].answers[answerNumber + 4];
+    answer1.innerText = christmasQuestions[QNumber].answers[answerNumber];
+    answer2.innerText = christmasQuestions[QNumber].answers[answerNumber + 1];
+    answer3.innerText = christmasQuestions[QNumber].answers[answerNumber + 2];
+    answer4.innerText = christmasQuestions[QNumber].answers[answerNumber + 3];
+    answer5.innerText = christmasQuestions[QNumber].answers[answerNumber + 4];
 }
 /**
  * 
