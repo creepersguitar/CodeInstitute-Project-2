@@ -126,6 +126,27 @@ button:hover {
 #play-Again {
     margin-top: 25px;
     visibility: hidden;
+    text-align: center;
+}
+
+#play-Again p {
+    font-size: 24px;  /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+#play-Again button {
+    background-color: #60993e;
+    color: #1f363d;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#play-Again button:hover {
+    background-color: #00b2ca;
 }
 
 footer {
@@ -140,8 +161,7 @@ footer {
     }
 
     #hero-text {
-        margin-top: 80%;
-        width: 50%;
+        margin-bottom: 40%;
     }
 }
 
