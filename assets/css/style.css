@@ -218,7 +218,6 @@ footer {
 }
 @media screen and (min-width: 768px) {
     #hero-text {
-        margin-top: 30%;
         padding: 5%;
     }
     #facebook {
@@ -236,13 +235,13 @@ footer {
 }
 @media screen and (min-width: 1024px) {
     #score-holder {
-        margin-top: 200px;
+        margin-top: 20em;
     }
     #hero {
         padding-right: 20px;
     }
     #hero-text {
-        margin-top: 25%;
+        margin-top: auto;
     }
     #facebook {
         margin-left: 420px;
