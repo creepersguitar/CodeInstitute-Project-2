@@ -25,7 +25,9 @@ visit the live site [here!] (https://creepersguitar.github.io/CodeInstitute-Proj
 ### colour choices
 
 ### Images
+The image is taken by Annie Spratt and the image is of some winter folliage ontop of a white background.
 
+See the image [here!](https://unsplash.com/photos/assorted-type-of-leaves-lying-on-white-panel-VDXtVYJVj7A)
 ## Features
 The website has features of a basic live moving website.
 - **header**
