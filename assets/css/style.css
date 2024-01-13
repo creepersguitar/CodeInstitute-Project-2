@@ -73,13 +73,11 @@ main {
     background-color: #60993e;
 }
 #hero {
-    height: auto;
-    min-height: 400px;
+    height: 700px;
     width: 100%;
     background: url("../images/annie-spratt-hero.webp") no-repeat center center/cover;
     position: relative;
 }
-
 #hero-text {
     display: none;
     background-color: rgba(204, 62, 92, 0.7);
@@ -92,7 +90,6 @@ main {
     color: white;
     border-radius: 10px;
     width: 80%;
-    max-width: 600px;
 }
 
 #question {
@@ -129,28 +126,9 @@ button:hover {
 #play-Again {
     margin-top: 25px;
     visibility: hidden;
-    text-align: center;
 }
 
-#play-Again p {
-    font-size: 24px;  /* Adjust the font size as needed */
-    margin-bottom: 10px;
-}
 
-#play-Again button {
-    background-color: #60993e;
-    color: #1f363d;
-    padding: 10px;
-    margin: 8px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#play-Again button:hover {
-    background-color: #00b2ca;
-}
 
 footer {
     background-color: #cc3e5c;
@@ -193,9 +171,8 @@ footer {
 }
 @media screen and (min-width: 768px) {
     #hero-text {
-        margin-top: 20%;
+        margin-top: 30%;
         padding: 5%;
-        max-width: 800px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -203,14 +180,13 @@ footer {
         padding-right: 20px;
     }
     #hero-text {
-        margin-top: 15%;
-        padding: 10%;
+        margin-top: 25%;
     }
 }/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
     #hero-text {
-        margin-top: 10%;
-        padding: 15%;
+        margin-top: 5%;
+        padding: 10%;
     }
     #answerOne {
         margin-right: 3rem;
