@@ -73,11 +73,13 @@ main {
     background-color: #60993e;
 }
 #hero {
-    height: 700px;
+    height: auto;
+    min-height: 400px;
     width: 100%;
     background: url("../images/annie-spratt-hero.webp") no-repeat center center/cover;
     position: relative;
 }
+
 #hero-text {
     display: none;
     background-color: rgba(204, 62, 92, 0.7);
@@ -90,6 +92,7 @@ main {
     color: white;
     border-radius: 10px;
     width: 80%;
+    max-width: 600px;
 }
 
 #question {
@@ -190,8 +193,9 @@ footer {
 }
 @media screen and (min-width: 768px) {
     #hero-text {
-        margin-top: 30%;
+        margin-top: 20%;
         padding: 5%;
+        max-width: 800px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -199,13 +203,14 @@ footer {
         padding-right: 20px;
     }
     #hero-text {
-        margin-top: 25%;
+        margin-top: 15%;
+        padding: 10%;
     }
 }/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
     #hero-text {
-        margin-top: 5%;
-        padding: 10%;
+        margin-top: 10%;
+        padding: 15%;
     }
     #answerOne {
         margin-right: 3rem;
