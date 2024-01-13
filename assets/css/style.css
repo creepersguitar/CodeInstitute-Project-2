@@ -222,7 +222,7 @@ footer {
         padding: 5%;
     }
     #facebook {
-        margin-left: 220px;
+        margin-left: 290px;
     }
     #twitter {
         margin-left: 30px;
@@ -235,11 +235,26 @@ footer {
     }
 }
 @media screen and (min-width: 1024px) {
+    #score-holder {
+        margin-top: 200px;
+    }
     #hero {
         padding-right: 20px;
     }
     #hero-text {
         margin-top: 25%;
+    }
+    #facebook {
+        margin-left: 420px;
+    }
+    #twitter {
+        margin-left: 30px;
+    }
+    #youtube {
+        margin-left: 30px;
+    }
+    #instagram {
+        margin-left: 30px;
     }
 }/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
@@ -277,10 +292,22 @@ footer {
     }
     header h2 {
         font-size: 35px;
-        text-align: center;
+        text-align: left;
     }
     #score {
         padding: 1rem;
         font-size: 35px;
+    }
+    #facebook {
+        margin-left: 640px;
+    }
+    #twitter {
+        margin-left: 30px;
+    }
+    #youtube {
+        margin-left: 30px;
+    }
+    #instagram {
+        margin-left: 30px;
     }
 }
