@@ -1,6 +1,6 @@
 # Wintersome-quiz
 
-![Mock-up!] ()
+![Mock-up!](assets/images/readme_images/mockup.png)
 
 This is the wintersome-quiz website. A website designed to test users on the winter season.
 
@@ -19,7 +19,7 @@ visit the live site [here!] (https://creepersguitar.github.io/CodeInstitute-Proj
 
 ### Wireframe Design
 
-![]
+![Wireframe-view](assets/images/readme_images/wireframe.png)
 ### font-choices
 
 ### colour choices
@@ -27,9 +27,20 @@ visit the live site [here!] (https://creepersguitar.github.io/CodeInstitute-Proj
 ### Images
 
 ## Features
-
-![]()
-
+The website has features of a basic live moving website.
+- **header**
+- The header is always visible and contains the score aswell as the name
+- The header also contains a modal to conceal the rules
+![header](assets/images/readme_images/header.png)
+- **main body**
+ - The main body is hidden until you click on the modal to show the rules
+ - The questions appear ontop of the hero image with 5 options to click on
+ - The background colour of the entire website is green (appart from the footer) to emphasise the christmas theme
+![main-body](assets/images/readme_images/body.png)
+- **Footer**
+ - The footer has links to the signup pages of different social media websites
+ - The colours on the footer are partially linked to the christmas theme as the background is red but the media logos are in blue.
+![Footer](assets/images/readme_images/footer.png)
 ### Potential Future features
  - add more difficult questions
  - add a difficulty system
@@ -53,9 +64,9 @@ The site wants to attract users that want to experience a fun quiz about all thi
 | Browser | Layout | Functionality | (Table Taken from MariaHochstoeger. The results are my own.)
 | :.....: | :....: | :...........: |
 | Safari  | ✔     | ✔             |
-| Chrome  |
-| Edge    |
-| Firefox |
+| Chrome  | ✔      | ✔            |
+| Edge    | ✔      | ✔            |
+| Firefox | ✔      | ✔            |
 | IE      | Depreciated by microsoft not needed to test |
 ### Manual Testing
 | Feature | Expect | Action | Result | (Table Taken from MariaHochstoeger. The results are my own.)
