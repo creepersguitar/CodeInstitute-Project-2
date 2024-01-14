@@ -60,7 +60,17 @@ The site wants to attract users that want to experience a fun quiz about all thi
 ### Unfixed Bugs
 - None as all bugs are fixed
 ### Validation Testing
-
+- HTML ([W3c Validator](https://validator.w3.org/))
+- There was a stray end tag on line 38 of the html file but that is now resolved so there is no errors now given when ran through the w3c validator.
+- The first image underneath this comment is to show the error, then the second image is the website re-ran through the validator to pass.
+[first image](assets/images/readme_images/htmlVal_errorshown.png)
+[second image]()
+- CSS ([Jigsaw](https://jigsaw.w3.org/css-validator/))
+- no errors mentioned within the css validation
+[css-validation](assets/images/readme_images/cssJigsaw.png)
+- JavaScript ([JSHint](https://jshint.com/))
+- The validator says that there is three unused variables but they are in the html file not the JS file.
+[JS Validation](assets/images/readme_images/jsvalidator.png)
 ### Browser Testing
 
 | Browser | Layout | Functionality | (Table Taken from MariaHochstoeger. The results are my own.)
