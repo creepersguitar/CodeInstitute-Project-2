@@ -165,6 +165,7 @@ function check(ansnum) {
  */
 function endGameFunc() {
     again.style.visibility = "visible";
+    document.getElementById("hero-text").style.visibility = "hidden";
 }
 
 /**
