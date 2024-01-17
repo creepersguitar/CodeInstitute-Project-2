@@ -91,9 +91,10 @@ The site wants to attract users that want to experience a fun quiz about all thi
 ### Manual Testing
 | Feature | Expect | Action | Result | (Table Taken from MariaHochstoeger. The results are my own.)
 | :.....: | :....: | :....: | :....: |
-|
-|
-|
+| all buttons work | all buttons work as expected | pressed all buttons | all buttons work | 
+| the rules show up when modal button is clicked | rules show up when modal clicked | click on modal | rules show up as modal button is clicked
+| play again "no" button takes you to google | no button takes you to google | clicked on "no" button | button takes you to google |
+| play again "yes" button refreshes the screen | screen refreshes after "yes" button is pressed |
 ## Deployment
 This site was deployed on Github Pages:
 - From the repository you are in, first navigate to "Settings" (This is at the top of the page).
