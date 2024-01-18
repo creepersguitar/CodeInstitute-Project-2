@@ -37,7 +37,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 #myBtn {
     position: absolute;
     top: 10px;
@@ -50,7 +49,6 @@
     cursor: pointer;
     font-size: 16px;
 }
-
 /* Style for the button when hovered */
 #myBtn:hover {
     background-color: #00b2ca;
@@ -66,7 +64,6 @@ header h2 {
     font-size: 40px;
     color: white;
 }
-
 main {
     padding: 20px;
     text-align: center;
@@ -90,12 +87,10 @@ main {
     border-radius: 10px;
     width: 80%;
 }
-
 #question {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
 button {
     background-color: #60993e;
     color: #fff;
@@ -106,11 +101,9 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
-
 button:hover {
     background-color: #00b2ca;
 }
-
 #score {
     font-size: 20px;
     font-weight: bold;
@@ -121,14 +114,10 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
 }
-
 #play-Again {
     margin-top: 25px;
     visibility: hidden;
 }
-
-
-
 footer {
     background-color: #cc3e5c;
     color: #fff;
@@ -150,12 +139,10 @@ footer {
         font-size: 20px;
         margin-right: 30px;
     }
-
     #hero-text {
         margin-bottom: 40%;
     }
 }
-
 /* media query for 320 pixels minimum */
 @media screen and (min-width: 320px) {
     header h2 {
@@ -197,7 +184,6 @@ footer {
         margin-left: 30px;
     }
 }
-
 @media screen and (min-width: 425px) {
     #hero-text {
         margin-top: 50%;

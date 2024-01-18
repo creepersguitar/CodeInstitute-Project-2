@@ -5,15 +5,15 @@ const answer2 = document.getElementById("answerTwo");
 const answer3 = document.getElementById("answerThree");
 const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
-const score = document.getElementById("score");
+const score = document.getElementById("scoreNumber");
 const again = document.getElementById("play-Again");
+const heroText = document.getElementById("hero-text");
 // Get the modal, button, and span elements
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
 let qNumber = 0;
 let scoreNumber = 0;
-
 const christmasQuestions = [
     {
         "question" : "What day is Christmas day?",
@@ -102,31 +102,32 @@ const christmasQuestions = [
 ];
 // variable to store the number of questions
 const qlength = christmasQuestions.length;
-
-
-// Attach event listeners to open and close the modal
-btn.onclick = showModal;
 span.onclick = function () {
     modal.style.display = "none";
 };
-
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 };
-
+/**
+ * shows the modal
+ */
+function showModel() {
+    modal.style.display = "visible";
+}
+/**
+ * closes modal
+ */
 function closeModal() {
     modal.style.display = "none";
 }
-
 /**
  * function to load the question to the page
  */
 function loadGameQuestion(qNumber) {
     question.innerText = christmasQuestions[qNumber].question;
 }
-
 /**
  * function to load the answer to the question
  */
@@ -137,7 +138,6 @@ function loadGameAnswer(qNumber) {
     answer4.innerText = christmasQuestions[qNumber].answers[3];
     answer5.innerText = christmasQuestions[qNumber].answers[4];
 }
-
 /**
  * checks what the user clicked is the correct answer
  */
@@ -159,21 +159,15 @@ function check(ansnum) {
         loadGameAnswer(qNumber);
     }
 }
-
 /**
  * makes the play again section visible
  */
 function endGameFunc() {
-    question.innerText =             <div id="play-Again">
-    <p>Would you like to play again?</p>
-    <p>if not you will be sent to googles homepage :D</p>
+    heroText.innerHTML = `
+    <h1>Would you like to play again?</h1>
     <button onclick="endOption(0)">Yes</button>
-    <button onclick="endOption(1)">No</button>
-    </div>
-    // again.style.visibility = "visible";
-    // document.getElementById("hero-text").style.visibility = "hidden";
+    <button onclick="endOption(1)">No</button>`
 }
-
 /**
  * function to end the game
  */
@@ -181,35 +175,29 @@ function endOption(chosenOpt) {
     if (chosenOpt === 0) {
         window.location.reload();
     } else {
-        
+      heroText.innerHTML = `
+      <h1>Thanks for playing</h1>`
     }
 }
-
 /**
  * function to start the game
  */
 function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
+    // Initialize the game
+    qNumber = 0;
+    scoreNumber = 0;
     // loads game questions and answers
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
 }
-
 /**
  * Function to show the modal and start the quiz
  */
 function showModal() {
     modal.style.display = "block";
     document.getElementById("hero-text").style.display = "block"; // Show the hero-text
-    // Initialize the game
-    qNumber = 0;
-    scoreNumber = 0;
-
-    // Load the first question and answers
-    loadGameQuestion(qNumber);
-    loadGameAnswer(qNumber);
 }
-
 // starts the script
 startchristmasQuiz();
