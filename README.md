@@ -89,6 +89,9 @@ The site wants to attract users that want to experience a fun quiz about all thi
 | Firefox | ✔      | ✔            |
 | IE      | Depreciated by microsoft not needed to test |
 ### Manual Testing
+- The table in this section and the section above are taken from a peer called MariaHochstoeger.
+- The results on the otherhand are my own.
+
 | Feature | Expect | Action | Result | (Table Taken from MariaHochstoeger. The results are my own.)
 | :.....: | :....: | :....: | :....: |
 | all buttons work | all buttons work as expected | pressed all buttons | all buttons work | 
