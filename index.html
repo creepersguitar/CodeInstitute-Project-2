@@ -22,18 +22,15 @@
     <header>
         <h2>Wintersome-quiz</h2>
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn"><span id="btncontent">How to Play?</span></button>
-
+    <button id="myBtn" onclick="showModal();"><span id="btncontent">How to Play?</span></button>
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <p>Click the correct button that has the right answer</p>
     <p> Oh and the score will be between this button and the name of the website</p>
   </div>
-
 </div>
 </header>
 <main>
@@ -50,7 +47,13 @@
         </div>
             <hr>
             <div id="score-holder">
-               <span id="score">Score: 0</span>
+              <div id="score">Score: <span id="scoreNumber">0</span></div>
+           </div>
+            <div id="play-Again">
+                <p>Would you like to play again?</p>
+                <p>if not you will be sent to googles homepage :D</p>
+                <button onclick="endOption(0)">Yes</button>
+                <button onclick="endOption(1)">No</button>
             </div>
     </div>
 </main>
