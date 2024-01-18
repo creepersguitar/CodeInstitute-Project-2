@@ -117,7 +117,7 @@ function showModel() {
     modal.style.display = "visible";
 }
 /**
- * closes modal
+ * closes the modal
  */
 function closeModal() {
     modal.style.display = "none";
