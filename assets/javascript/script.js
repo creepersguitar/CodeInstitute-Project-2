@@ -7,12 +7,16 @@ const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("score");
 const again = document.getElementById("play-Again");
+// Get the modal, button, and span elements
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
 let qNumber = 0;
 let scoreNumber = 0;
 
 const christmasQuestions = [
     {
-        "question" : "What day is christmas day?",
+        "question" : "What day is Christmas day?",
         "answers" : [
             "December 1st", "December 25th", "January 26th", "December 29th", "May 5th"
         ],
@@ -99,10 +103,6 @@ const christmasQuestions = [
 // variable to store the number of questions
 const qlength = christmasQuestions.length;
 
-// Get the modal, button, and span elements
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
 
 // Attach event listeners to open and close the modal
 btn.onclick = showModal;
@@ -175,7 +175,7 @@ function endOption(chosenOpt) {
     if (chosenOpt === 0) {
         window.location.reload();
     } else {
-        window.location.href = "https://www.google.com";
+        
     }
 }
 
@@ -195,8 +195,6 @@ function startchristmasQuiz() {
  */
 function showModal() {
     modal.style.display = "block";
-    document.getElementById("hero-text").style.display = "block"; // Show the hero-text
-
     // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
