@@ -113,7 +113,7 @@ window.onclick = function (event) {
 /**
  * shows the modal
  */
-function showModel() {
+function showModal() {
     modal.style.display = "visible";
 }
 /**
