@@ -219,9 +219,6 @@ footer {
     }
 }
 @media screen and (min-width: 1024px) {
-    #score-holder {
-        margin-top: 20em;
-    }
     #hero {
         padding-right: 20px;
     }
