@@ -164,8 +164,14 @@ function check(ansnum) {
  * makes the play again section visible
  */
 function endGameFunc() {
-    again.style.visibility = "visible";
-    document.getElementById("hero-text").style.visibility = "hidden";
+    question.innerText =             <div id="play-Again">
+    <p>Would you like to play again?</p>
+    <p>if not you will be sent to googles homepage :D</p>
+    <button onclick="endOption(0)">Yes</button>
+    <button onclick="endOption(1)">No</button>
+    </div>
+    // again.style.visibility = "visible";
+    // document.getElementById("hero-text").style.visibility = "hidden";
 }
 
 /**
