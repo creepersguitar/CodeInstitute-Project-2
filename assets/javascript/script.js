@@ -35,7 +35,7 @@ const christmasQuestions = [
     {
         "question" : "What are the two other most popular names for Santa Claus?",
         "answers" : [
-            "Saint Kringle","Santa baby","Kris Kringle and Saint Nick","Saint George","Kris Klaus"
+            "Saint Kringle and rant single","Santa baby and claus kringle","Kris Kringle and Saint Nick","Saint George and nicholas klaus","Kris Klaus and santa claus"
         ],
         "correct" : 2
     },
