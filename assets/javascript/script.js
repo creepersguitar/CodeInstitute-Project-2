@@ -195,6 +195,7 @@ function startchristmasQuiz() {
  */
 function showModal() {
     modal.style.display = "block";
+    document.getElementById("hero-text").style.display = "block"; // Show the hero-text
     // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
