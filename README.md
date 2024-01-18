@@ -119,9 +119,10 @@ This site was deployed on Github Pages:
 - The first 3 questions were taken from [parade.com](https://parade.com/943457/parade/christmas-trivia/)
 - The rest of the questions apart from the last 3 were taken from [cosmopolitan.com](https://www.cosmopolitan.com/uk/worklife/a34747711/christmas-quiz-questions/)
 -  The last 3 questions were taken from [goodhousekeeping](https://www.goodhousekeeping.com/uk/christmas/christmas-countdown/a34572101/christmas-quiz/)
+- The code for the modal was taken from [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
 ## Credits
 - My mentor, Spencer Barribal, for his input and for showing a base demo of what the project could look like.
-- w3schools for providing me with information about tips and tricks to improve my code
+- w3schools for providing me with information about tips and tricks to improve my code (such as for the modal)
 - Annie Spratt on unsplash for the hero image that i used.
 - Goodhousekeeping.com for providing the last three questions and answers
 - parade.com for providing the first three questions and answers
