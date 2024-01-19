@@ -202,7 +202,7 @@ function startchristmasQuiz() {
  */
 function showModal() {
     modal.style.display = "block";
-    document.getElementById("heroText").style.display = "visible"; // Show the hero-text
+    document.getElementById("heroText").style.display = "block"; // Show the hero-text
 }
 // starts the script
 startchristmasQuiz();
