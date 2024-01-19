@@ -191,7 +191,7 @@ function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
     // Initialize the game
-    qNumber = -1;
+    qNumber = 0;
     scoreNumber = 0;
     // loads game questions and answers
     loadGameQuestion(qNumber);
@@ -202,7 +202,7 @@ function startchristmasQuiz() {
  */
 function showModal() {
     modal.style.display = "block";
-    document.getElementById("hero-text").style.display = "visible"; // Show the hero-text
+    document.getElementById("heroText").style.display = "visible"; // Show the hero-text
 }
 // starts the script
 startchristmasQuiz();
