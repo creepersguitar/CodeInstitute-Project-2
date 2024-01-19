@@ -110,15 +110,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
-/**
- * shows the modal
- */
 function showModel() {
     modal.style.display = "visible";
 }
-/**
- * closes the modal
- */
 function closeModal() {
     modal.style.display = "none";
 }
@@ -186,7 +180,7 @@ function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
     // Initialize the game
-    qNumber = 1;
+    qNumber = 0;
     scoreNumber = 0;
     // loads game questions and answers
     loadGameQuestion(qNumber);
