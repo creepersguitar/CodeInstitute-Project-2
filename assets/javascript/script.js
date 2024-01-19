@@ -186,7 +186,7 @@ function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
     // Initialize the game
-    qNumber = 0;
+    qNumber = 1;
     scoreNumber = 0;
     // loads game questions and answers
     loadGameQuestion(qNumber);
