@@ -197,12 +197,9 @@ function startchristmasQuiz() {
     scoreNumber = 0;
     // loads game questions and answers
     console.log(christmasQuestions)
-    question.innerText = christmasQuestions[qNumber].question;
-    answer1.innerText = christmasQuestions[qNumber].answers[0];
-    answer2.innerText = christmasQuestions[qNumber].answers[1];
-    answer3.innerText = christmasQuestions[qNumber].answers[2];
-    answer4.innerText = christmasQuestions[qNumber].answers[3];
-    answer5.innerText = christmasQuestions[qNumber].answers[4];
+    loadGameQuestion(qNumber);
+    loadGameAnswer(qNumber);
+    showModal();
 }
 /**
  * Function to show the modal and start the quiz
