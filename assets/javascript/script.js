@@ -205,6 +205,4 @@ function showModal() {
     document.getElementById("hero-text").style.display = "block"; // Show the hero-text
 }
 // starts the script
-window.onload = function () {
-    startchristmasQuiz();
-}
+startchristmasQuiz();
