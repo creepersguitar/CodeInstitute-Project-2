@@ -12,8 +12,10 @@ const heroText = document.getElementById("hero-text");
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
+
 let qNumber = 0;
 let scoreNumber = 0;
+
 const christmasQuestions = [
     {
         "question" : "What day is Christmas day?",
@@ -102,6 +104,9 @@ const christmasQuestions = [
 ];
 // variable to store the number of questions
 const qlength = christmasQuestions.length;
+
+
+
 span.onclick = function () {
     modal.style.display = "none";
 };
@@ -110,9 +115,15 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+/**
+ * shows the modal
+ */
 function showModel() {
     modal.style.display = "visible";
 }
+/**
+ * closes the modal
+ */
 function closeModal() {
     modal.style.display = "none";
 }
@@ -180,8 +191,8 @@ function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
     // Initialize the game
-//    qNumber = 0;
-//    scoreNumber = 0;
+    qNumber = 0;
+    scoreNumber = 0;
     // loads game questions and answers
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
