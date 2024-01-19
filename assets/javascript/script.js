@@ -197,6 +197,7 @@ function startchristmasQuiz() {
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
     showModal();
+}
 /**
  * Function to show the modal and start the quiz
  */
