@@ -130,12 +130,14 @@ function closeModal() {
 /**
  * function to load the question to the page
  */
+console.log(christmasQuestions[qNumber].question)
 function loadGameQuestion(qNumber) {
     question.innerText = christmasQuestions[qNumber].question;
 }
 /**
  * function to load the answer to the question
  */
+console.log(christmasQuestions[qNumber].question)
 function loadGameAnswer(qNumber) {
     answer1.innerText = christmasQuestions[qNumber].answers[0];
     answer2.innerText = christmasQuestions[qNumber].answers[1];
@@ -194,9 +196,13 @@ function startchristmasQuiz() {
     qNumber = 0;
     scoreNumber = 0;
     // loads game questions and answers
-    loadGameQuestion(qNumber);
-    loadGameAnswer(qNumber);
-    showModal();
+    console.log(christmasQuestions)
+    question.innerText = christmasQuestions[qNumber].question;
+    answer1.innerText = christmasQuestions[qNumber].answers[0];
+    answer2.innerText = christmasQuestions[qNumber].answers[1];
+    answer3.innerText = christmasQuestions[qNumber].answers[2];
+    answer4.innerText = christmasQuestions[qNumber].answers[3];
+    answer5.innerText = christmasQuestions[qNumber].answers[4];
 }
 /**
  * Function to show the modal and start the quiz
