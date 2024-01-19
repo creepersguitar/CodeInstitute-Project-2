@@ -196,13 +196,13 @@ function startchristmasQuiz() {
     // loads game questions and answers
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
-}
+    showModal();
 /**
  * Function to show the modal and start the quiz
  */
 function showModal() {
     modal.style.display = "block";
-    document.getElementById("heroText").style.display = "block"; // Show the hero-text
+    document.getElementById("heroText").style.display = "visible"; // Show the hero-text
 }
 // starts the script
 startchristmasQuiz();
