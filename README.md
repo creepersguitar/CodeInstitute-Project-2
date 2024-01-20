@@ -4,7 +4,7 @@
 
 This is the wintersome-quiz website. A website designed to test users on the winter season.
 
-visit the live site [here!] (https://creepersguitar.github.io/CodeInstitute-Project-2/)
+visit the live site [here!](https://creepersguitar.github.io/CodeInstitute-Project-2/)
 
 ## Contents
 1. [Design](#design)
