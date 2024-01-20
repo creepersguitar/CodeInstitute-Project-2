@@ -66,7 +66,7 @@ The site wants to attract users that want to experience a fun quiz about all thi
  
  - line 167, the variable "playAgain" should've been "again" which it now is.
 ### Unfixed Bugs
-- None as all bugs are fixed
+- The only bug found which couldn't be fixed is that the first question does not want to load properly but when console.log statements are added into the program, it shows that the question is working.
 ### Validation Testing
 - HTML ([W3c Validator](https://validator.w3.org/))
 - There was a stray end tag on line 38 of the html file but that is now resolved so there is no errors now given when ran through the w3c validator.
