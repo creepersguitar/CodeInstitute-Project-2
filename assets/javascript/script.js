@@ -188,7 +188,6 @@ function endOption(chosenOpt) {
 /**
  * function to start the game
  */
-document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
 function startchristmasQuiz() {
     // hides start quiz button
     document.getElementById("startQuizBtn").style.display = "none";
@@ -210,4 +209,4 @@ function showModal() {
     document.getElementById("heroText").style.display = "visible"; // Show the hero-text
 }
 // starts the script
-startchristmasQuiz();
+document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
