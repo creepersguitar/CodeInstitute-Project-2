@@ -130,3 +130,4 @@ This site was deployed on Github Pages:
 - Goodhousekeeping.com for providing the last three questions and answers
 - parade.com for providing the first three questions and answers
 - cosmopolitan.com for providing the rest of the questions and answers
+- Mark Butler - a fellow student who helped me to figure out a solution to a problem
