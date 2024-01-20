@@ -132,12 +132,12 @@ function closeModal() {
  * function to load the question to the page
  */
 function loadGameQuestion(qNumber) {
+    question.innerText = christmasQuestions[qNumber].question;
     answer1.removeAttribute('disabled');
     answer2.removeAttribute('disabled');
     answer3.removeAttribute('disabled');
     answer4.removeAttribute('disabled');
-    answer5.removeAttribute('disabled')
-    question.innerText = christmasQuestions[qNumber].question;
+    answer5.removeAttribute('disabled');
 }
 /**
  * function to load the answer to the question
@@ -193,6 +193,7 @@ function endOption(chosenOpt) {
 /**
  * function to start the game
  */
+document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
 function startchristmasQuiz() {
     // hides start quiz button
     document.getElementById("startQuizBtn").style.display = "none";
@@ -213,5 +214,3 @@ function showModal() {
     modal.style.display = "block";
     document.getElementById("heroText").style.display = "visible"; // Show the hero-text
 }
-// starts the script
-document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
