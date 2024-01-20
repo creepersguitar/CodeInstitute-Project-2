@@ -130,16 +130,12 @@ function closeModal() {
 /**
  * function to load the question to the page
  */
-console.log(christmasQuestions[qNumber].question)
 function loadGameQuestion(qNumber) {
-    console.log("qNumber: ", qNumber)
-    console.log("Loading game....")
     question.innerText = christmasQuestions[qNumber].question;
 }
 /**
  * function to load the answer to the question
  */
-console.log(christmasQuestions[qNumber].question)
 function loadGameAnswer(qNumber) {
     answer1.innerText = christmasQuestions[qNumber].answers[0];
     answer2.innerText = christmasQuestions[qNumber].answers[1];
@@ -151,7 +147,6 @@ function loadGameAnswer(qNumber) {
  * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
-    console.log("Check function is running...")
     // check if the answer is correct
     let correct = christmasQuestions[qNumber].correct;
     if (ansnum === correct) {
@@ -199,7 +194,6 @@ function startchristmasQuiz() {
     qNumber = 0;
     scoreNumber = 0;
     // loads game questions and answers
-    console.log(christmasQuestions)
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
     showModal();
