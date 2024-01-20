@@ -190,6 +190,8 @@ function endOption(chosenOpt) {
  */
 document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
 function startchristmasQuiz() {
+    // hides start quiz button
+    document.getElementById("startQuizBtn").style.display = "none";
     // hides the play again button
     again.style.visibility = "hidden";
     // Initialize the game
