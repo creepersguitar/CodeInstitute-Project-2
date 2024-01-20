@@ -8,6 +8,7 @@ const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("scoreNumber");
 const again = document.getElementById("play-Again");
 const heroText = document.getElementById("hero-text");
+const startquiz = document.getElementById("startQuizBtn");
 // Get the modal, button, and span elements
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
@@ -187,6 +188,7 @@ function endOption(chosenOpt) {
 /**
  * function to start the game
  */
+document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
 function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
