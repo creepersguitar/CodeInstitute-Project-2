@@ -199,7 +199,9 @@ function startchristmasQuiz() {
     // hides start quiz button
     document.getElementById("startQuizBtn").style.display = "none";
     // hides the play again button
-    again.style.visibility = "hidden";
+    if (again !== null) {
+        again.style.visibility = "hidden";
+    }
     // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
