@@ -134,11 +134,11 @@ function closeModal() {
 function loadGameQuestion(qNumber) {
     console.log("Loading question number: " + qNumber);
     question.innerText = christmasQuestions[qNumber].question;
-    answerOne.removeAttribute('disabled');
-    answerTwo.removeAttribute('disabled');
-    answerThree.removeAttribute('disabled');
-    answerFour.removeAttribute('disabled');
-    answerFive.removeAttribute('disabled');
+    answer1.removeAttribute('disabled');
+    answer2.removeAttribute('disabled');
+    answer3.removeAttribute('disabled');
+    answer4.removeAttribute('disabled');
+    answer5.removeAttribute('disabled');
 }
 /**
  * function to load the answer to the question
