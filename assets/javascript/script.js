@@ -7,6 +7,7 @@ const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("scoreNumber");
 const again = document.getElementById("play-Again");
+const startquiz = document.getElementById("startQuizBtn");
 const heroText = document.getElementById("hero-text");
 // Get the modal, button, and span elements
 const modal = document.getElementById("myModal");
@@ -132,6 +133,8 @@ function closeModal() {
  */
 console.log(christmasQuestions[qNumber].question)
 function loadGameQuestion(qNumber) {
+    console.log("qNumber: ", qNumber)
+    console.log("Loading game....")
     question.innerText = christmasQuestions[qNumber].question;
 }
 /**
@@ -149,6 +152,7 @@ function loadGameAnswer(qNumber) {
  * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
+    console.log("Check function is running...")
     // check if the answer is correct
     let correct = christmasQuestions[qNumber].correct;
     if (ansnum === correct) {
@@ -192,6 +196,7 @@ function endOption(chosenOpt) {
 function startchristmasQuiz() {
     // hides the play again button
     again.style.visibility = "hidden";
+    document.getElementById("startQuizBtn").style.display = "none";
     // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
