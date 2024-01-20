@@ -7,7 +7,7 @@ const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("scoreNumber");
 const again = document.getElementById("play-Again");
-const heroText = document.getElementById("hero-text");
+const heroText = document.getElementById("heroText");
 const startquiz = document.getElementById("startQuizBtn");
 // Get the modal, button, and span elements
 const modal = document.getElementById("myModal");
@@ -132,6 +132,11 @@ function closeModal() {
  * function to load the question to the page
  */
 function loadGameQuestion(qNumber) {
+    answer1.removeAttribute('disabled');
+    answer2.removeAttribute('disabled');
+    answer3.removeAttribute('disabled');
+    answer4.removeAttribute('disabled');
+    answer5.removeAttribute('disabled')
     question.innerText = christmasQuestions[qNumber].question;
 }
 /**
