@@ -203,6 +203,36 @@ footer {
         margin-left: 30px;
     }
 }
+@media screen and (min-width: 412px) {
+/* Adjustments for screen width of 412 pixels */
+    header h2 {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    #myBtn {
+        font-size: 14px;
+        padding: 3px 5px;
+        top: 5px;
+        right: 5px;
+    }
+    #score {
+        font-size: 14px;
+        padding: 5px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    main {
+        padding-top: 50px;
+    }
+    #facebook {
+        margin-left: 40px;
+    }
+    #twitter, #youtube, #instagram {
+        margin-left: 40px;
+    }
+}
+
 @media screen and (min-width: 425px) {
     #hero-text {
         margin-top: 2em;
@@ -223,29 +253,37 @@ footer {
         margin-top: inherit;
     }
 }
-@media screen and (min-width: 768px) {
-    #hero-text {
-        padding: 5%;
+/* Adjustments for iPad Mini (768px) */
+@media screen and (max-width: 768px) {
+    header h2 {
+        font-size: 24px;
+        margin-right: 20px;
     }
-    #facebook {
-        margin-left: 290px;
-    }
-    #twitter {
-        margin-left: 30px;
-    }
-    #youtube {
-        margin-left: 30px;
-    }
-    #instagram {
-        margin-left: 30px;
+    #myBtn {
+        font-size: 16px;
+        padding: 5px 10px;
+        top: 10px;
+        right: 10px;
     }
     #score {
-        margin-top: 1em;
+        top: 10px; /* Adjust top positioning */
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #btncontent {
-        margin-top: 1em;
+    main {
+        padding-top: 50px;
+    }
+    footer {
+        padding: 20px;
+    }
+    #facebook {
+        margin-left: 20px;
+    }
+    #twitter, #youtube, #instagram {
+        margin-left: 10px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     #hero {
         padding-right: 20px;
