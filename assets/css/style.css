@@ -100,7 +100,6 @@ button {
     border-radius: 7px;
     cursor: pointer;
     font-size: 16px;
-    outline-color: transparent;
 }
 button:hover {
     background-color: #00b2ca;
@@ -125,15 +124,19 @@ footer {
 }
 #facebook {
     margin-left: 40px;
+    padding: 5px;
 }
 #twitter {
     margin-left: 30px;
+    padding: 5px;
 }
 #youtube {
     margin-left: 30px;
+    padding: 5px;
 }
 #instagram {
     margin-left: 30px;
+    padding: 5px;
 }
 @media screen and (min-width: 280px) {
     header h2 {
