@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap');
+/* Remove default focus outline */
+*:focus {
+    outline: none;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
