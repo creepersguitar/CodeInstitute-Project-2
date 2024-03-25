@@ -215,6 +215,9 @@ footer {
     #instagram {
         margin-left: 30px;
     }
+    #score {
+        margin-top: inherit;
+    }
 }
 @media screen and (min-width: 768px) {
     #hero-text {
