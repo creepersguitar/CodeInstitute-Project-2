@@ -142,6 +142,18 @@ footer {
     #hero-text {
         margin-bottom: 40%;
     }
+    #myBtn {
+        top: 5px; /* Adjust button position */
+        right: 5px; /* Adjust button position */
+        font-size: 14px; /* Decrease font size */
+        padding: 3px 5px; /* Adjust padding */
+    }
+    #score {
+        font-size: 14px; /* Decrease font size */
+        padding: 5px; /* Adjust padding */
+        top: 5px; /* Adjust score position */
+        margin-top: 2.5em
+    }
 }
 /* media query for 320 pixels minimum */
 @media screen and (min-width: 320px) {
