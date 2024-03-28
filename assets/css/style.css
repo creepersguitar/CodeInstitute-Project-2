@@ -271,16 +271,16 @@ footer {
         transform: translateX(-50%);
     }
     main {
-        padding-top: 50px;
+        padding-top: 60px;
     }
     footer {
-        padding: 20px;
+        padding: 40px;
     }
     #facebook {
-        margin-left: 20px;
+        margin-left: 30px;
     }
     #twitter, #youtube, #instagram {
-        margin-left: 10px;
+        margin-left: 50px;
     }
 }
 

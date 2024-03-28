@@ -178,7 +178,12 @@ function endGameFunc() {
     heroText.innerHTML = `
     <h1>Would you like to play again?</h1>
     <button onclick="endOption(0)">Yes</button>
-    <button onclick="endOption(1)">No</button>`
+    <button onclick="endOption(1)">No</button>`;
+    
+    // Make the play-Again section visible
+    if (again !== null) {
+        again.style.visibility = "visible";
+    }
 }
 /**
  * function to end the game
