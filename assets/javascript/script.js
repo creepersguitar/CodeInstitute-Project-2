@@ -1,4 +1,4 @@
-// getters
+// getters (gets elements by their IDs)
 const question = document.getElementById("question");
 const answer1 = document.getElementById("answerOne");
 const answer2 = document.getElementById("answerTwo");
@@ -13,10 +13,10 @@ const startquiz = document.getElementById("startQuizBtn");
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
-
+// initialises variables
 let qNumber = 0;
 let scoreNumber = 0;
-
+// List of questions
 const christmasQuestions = [
     {
         "question" : "What day is Christmas day?",
@@ -107,7 +107,7 @@ const christmasQuestions = [
 const qlength = christmasQuestions.length;
 
 
-
+// When clicked display modal
 span.onclick = function () {
     modal.style.display = "none";
 };
