@@ -7,13 +7,15 @@ const answer4 = document.getElementById("answerFour");
 const answer5 = document.getElementById("answerFive");
 const score = document.getElementById("scoreNumber");
 const again = document.getElementById("play-Again");
+const heroText = document.getElementById("heroText");
+const startquiz = document.getElementById("startQuizBtn");
+// Get the modal, button, and span elements
 const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
-
 // initialises variables
 let qNumber = 0;
 let scoreNumber = 0;
-
 // List of questions
 const christmasQuestions = [
     {
@@ -77,7 +79,7 @@ const christmasQuestions = [
         "answers" : [
             "1843", "1900", "1438", "1239", "1066"
         ],
-        "correct" : 0
+        "correct" : 1
     },
     {
         "question" : "Which celebrity won the first ever Strictly Come Dancing in December 2004?",
@@ -101,9 +103,9 @@ const christmasQuestions = [
         "correct" : 4
     },
 ];
-
 // variable to store the number of questions
 const qlength = christmasQuestions.length;
+
 
 // When clicked display modal
 span.onclick = function () {
@@ -114,46 +116,61 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
-
+/**
+ * shows the modal
+ */
+function showModel() {
+    modal.style.display = "visible";
+}
+/**
+ * closes the modal
+ */
+function closeModal() {
+    modal.style.display = "none";
+}
 /**
  * function to load the question to the page
  */
 function loadGameQuestion(qNumber) {
     console.log("Loading question number: " + qNumber);
     question.innerText = christmasQuestions[qNumber].question;
-    enableAnswers();
+    answer1.removeAttribute('disabled');
+    answer2.removeAttribute('disabled');
+    answer3.removeAttribute('disabled');
+    answer4.removeAttribute('disabled');
+    answer5.removeAttribute('disabled');
 }
-
 /**
  * function to load the answer to the question
  */
 function loadGameAnswer(qNumber) {
-    const answers = christmasQuestions[qNumber].answers;
-    answer1.innerText = answers[0];
-    answer2.innerText = answers[1];
-    answer3.innerText = answers[2];
-    answer4.innerText = answers[3];
-    answer5.innerText = answers[4];
+    answer1.innerText = christmasQuestions[qNumber].answers[0];
+    answer2.innerText = christmasQuestions[qNumber].answers[1];
+    answer3.innerText = christmasQuestions[qNumber].answers[2];
+    answer4.innerText = christmasQuestions[qNumber].answers[3];
+    answer5.innerText = christmasQuestions[qNumber].answers[4];
 }
-
 /**
  * checks what the user clicked is the correct answer
  */
 function check(ansnum) {
+    // check if the answer is correct
     let correct = christmasQuestions[qNumber].correct;
     if (ansnum === correct) {
+        // increment score
         scoreNumber++;
         score.innerHTML = scoreNumber;
     }
+    // increment the question number
     qNumber++;
     if (qNumber === qlength) {
+        // makes visible the play again button
         endGameFunc();
     } else {
         loadGameQuestion(qNumber);
         loadGameAnswer(qNumber);
     }
 }
-
 /**
  * makes the play again section visible
  */
@@ -162,11 +179,12 @@ function endGameFunc() {
     <h1>Would you like to play again?</h1>
     <button onclick="endOption(0)">Yes</button>
     <button onclick="endOption(1)">No</button>`;
+    
+    // Make the play-Again section visible
     if (again !== null) {
         again.style.visibility = "visible";
     }
 }
-
 /**
  * function to end the game
  */
@@ -174,27 +192,29 @@ function endOption(chosenOpt) {
     if (chosenOpt === 0) {
         window.location.reload();
     } else {
-        heroText.innerHTML = `
-        <h1>Thanks for playing</h1>`;
+      heroText.innerHTML = `
+      <h1>Thanks for playing</h1>`
     }
 }
-
 /**
  * function to start the game
  */
 document.getElementById("startQuizBtn").addEventListener("click", startchristmasQuiz);
 function startchristmasQuiz() {
+    // hides start quiz button
     document.getElementById("startQuizBtn").style.display = "none";
+    // hides the play again button
     if (again !== null) {
         again.style.visibility = "hidden";
     }
+    // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
+    // loads game questions and answers
     loadGameQuestion(qNumber);
     loadGameAnswer(qNumber);
     showModal();
 }
-
 /**
  * Function to show the modal and start the quiz
  */
