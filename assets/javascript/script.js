@@ -208,11 +208,11 @@ function startchristmasQuiz() {
     if (again !== null) {
         again.style.visibility = "hidden";
     }
-    const answer1 = document.getElementById("answerOne").style.display = 'inline-block';
-    const answer2 = document.getElementById("answerTwo").style.display = 'inline-block';
-    const answer3 = document.getElementById("answerThree").style.display = 'inline-block';
-    const answer4 = document.getElementById("answerFour").style.display = 'inline-block';
-    const answer5 = document.getElementById("answerFive").style.display = 'inline-block';
+    document.getElementById("answerOne").style.display = 'inline-block';
+    document.getElementById("answerTwo").style.display = 'inline-block';
+    document.getElementById("answerThree").style.display = 'inline-block';
+    document.getElementById("answerFour").style.display = 'inline-block';
+    document.getElementById("answerFive").style.display = 'inline-block';
     // Initialize the game
     qNumber = 0;
     scoreNumber = 0;
