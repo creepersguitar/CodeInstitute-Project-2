@@ -1,6 +1,6 @@
 # Wintersome-quiz
 
-![Mock-up!](assets/images/readme_images/mockup.png)
+![Mock-up!](assets/images/readme_images/mockup-resubmit.png)
 
 This is the wintersome-quiz website. A website designed to test users on the winter season.
 
@@ -9,10 +9,15 @@ visit the live site [here!](https://creepersguitar.github.io/CodeInstitute-Proje
 ## Contents
 1. [Design](#design)
 2. [Features](#features)
-3. [UX](#ux)
-4. [Testing](#testing)
-5. [Sources](#sources)
-6. [Credits](#credits)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Code Structure](#code-structure)
+6. [UX](#ux)
+7. [Testing](#testing)
+8. [Sources](#sources)
+9. [Credits](#credits)
+10. [Contributing](#contributing)
+11. [Contact](#contact)
 
 
 ## Design
@@ -55,6 +60,38 @@ The website has features of a basic live moving website.
  - add more difficult questions
  - add a difficulty system
  - link to a question generator
+## Installation
+
+To run the Wintersome Quiz locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/wintersome-quiz.git
+2. **Navigate to the project directory:**
+	cd wintersome-quiz
+3. **Open index.html in your preferred web browser.**
+## Usage
+
+To start the quiz:
+
+1. Open `index.html` in a web browser.
+2. Click the "Start Quiz" button to begin.
+3. Answer the questions by clicking on the corresponding buttons.
+4. Your score will be displayed and updated as you proceed through the quiz.
+5. After the final question, you will have the option to play again or end the game.
+
+## Code Structure
+
+The project consists of the following files and directories:
+
+- `index.html`: The main HTML file that structures the webpage.
+- `assets/css/style.css`: The CSS file for styling the webpage.
+- `assets/javascript/script.js`: The JavaScript file containing the quiz logic.
+- `assets/images/`: Directory containing image assets used in the project.
+- `assets/images/readme_images`: Directory containing image assets for the readme.md file
+- `assets/favicon/`: Directory containing favicon files for the webpage.
+
 ## UX
 ### Site Goals
 The site wants to attract users that want to experience a fun quiz about all things christmas.(including shows, films, important dates and more!)
@@ -131,4 +168,21 @@ This site was deployed on Github Pages:
 - parade.com for providing the first three questions and answers
 - cosmopolitan.com for providing the rest of the questions and answers
 - Mark Butler - a fellow student who helped me to figure out a solution to a problem
-- Sarah_5p - A fellow student who helped figure out the issue with the green buttons appearing before the user presses start quiz button
+- Sarah_5p - A fellow student who helped figure out the issue with the green buttons appearing before the user presses the start quiz button
+- Stephen Dawson - An alumni from Code Institute who helped figure out the same issue as sarah of the green buttons appearing before the user presses the start quiz button
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- GitHub: [creepersguitar](https://github.com/creepersguitar)
