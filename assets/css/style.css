@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap');
+
 [id*="answer"] {
     display: none;
-  }
+}
 
 /* The Modal (background) */
 .modal {
@@ -17,7 +18,7 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-  
+
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
@@ -26,7 +27,7 @@
     border: 1px solid #888;
     width: 80%;
 }
-  
+
 /* The Close Button */
 .close {
     color: #aaaaaa;
@@ -34,13 +35,14 @@
     font-size: 28px;
     font-weight: bold;
 }
-  
+
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
 #myBtn {
     position: absolute;
     top: 10px;
@@ -53,32 +55,38 @@
     cursor: pointer;
     font-size: 16px;
 }
+
 /* Style for the button when hovered */
 #myBtn:hover {
     background-color: #00b2ca;
 }
+
 header {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 500;
     background-color: #cc3e5c;
 }
+
 header h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: white;
 }
+
 main {
     padding: 20px;
     text-align: center;
     background-color: #60993e;
 }
+
 #hero {
     height: 700px;
     width: 100%;
     background: url("../images/annie-spratt-hero.webp") no-repeat center center/cover;
     position: relative;
 }
+
 #hero-text {
     background-color: rgba(204, 62, 92, 0.7);
     position: absolute;
@@ -91,10 +99,12 @@ main {
     border-radius: 10px;
     width: 80%;
 }
+
 #question {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
 button {
     background-color: #60993e;
     color: #fff;
@@ -105,9 +115,11 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
 button:hover {
     background-color: #00b2ca;
 }
+
 #score {
     font-size: 20px;
     font-weight: bold;
@@ -118,30 +130,27 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
 #play-Again {
     margin-top: 25px;
     visibility: hidden;
 }
+
 footer {
     background-color: #cc3e5c;
     color: #fff;
 }
-#facebook {
-    margin-left: 40px;
-    padding: 5px;
-}
-#twitter {
-    margin-left: 30px;
-    padding: 5px;
-}
-#youtube {
-    margin-left: 30px;
-    padding: 5px;
-}
+
+/* Social media tags */
+#facebook,
+#twitter,
+#youtube,
 #instagram {
-    margin-left: 30px;
+    display: inline-block;
     padding: 5px;
+    margin: 0 10px;
 }
+
 @media screen and (min-width: 280px) {
     header h2 {
         font-size: 20px;
@@ -162,6 +171,9 @@ footer {
         top: 5px; /* Adjust score position */
         margin-top: 2.5em
     }
+    #quiz-title {
+        font-size: 16px;
+    }
 }
 /* media query for 320 pixels minimum */
 @media screen and (min-width: 320px) {
@@ -174,16 +186,16 @@ footer {
         width: 60%;
     }
     #facebook {
-        margin-left: 60px;
+        margin-left: 20px;
     }
     #twitter {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #youtube {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #instagram {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #score {
         margin-top: 3em;
@@ -195,7 +207,7 @@ footer {
         margin-top: 2em;
     }
     #facebook {
-        margin-left: 90px;
+        margin-left: 30px;
     }
     #twitter {
         margin-left: 30px;
@@ -230,10 +242,10 @@ footer {
         padding-top: 50px;
     }
     #facebook {
-        margin-left: 40px;
+        margin-left: 20px;
     }
     #twitter, #youtube, #instagram {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 }
 
@@ -242,16 +254,16 @@ footer {
         margin-top: 2em;
     }
     #facebook {
-        margin-left: 120px;
+        margin-left: 40px;
     }
     #twitter {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #youtube {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #instagram {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #score {
         margin-top: inherit;
@@ -281,10 +293,10 @@ footer {
         padding: 40px;
     }
     #facebook {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #twitter, #youtube, #instagram {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 }
 
@@ -296,21 +308,23 @@ footer {
         margin-top: auto;
     }
     #facebook {
-        margin-left: 420px;
+        margin-left: 40px;
     }
     #twitter {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #youtube {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #instagram {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #score {
         font-size: 14px;
     }
-}/* Media query to target large laptops*/
+}
+
+/* Media query to target large laptops*/
 @media screen and (min-width: 1440px) {
     #hero-text {
         margin-top: 5%;
@@ -353,15 +367,15 @@ footer {
         font-size: 35px;
     }
     #facebook {
-        margin-left: 640px;
+        margin-left: 40px;
     }
     #twitter {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #youtube {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #instagram {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 }
