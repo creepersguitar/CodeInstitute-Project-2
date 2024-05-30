@@ -99,14 +99,12 @@ window.onclick = function (event) {
  */
 function loadGameQuestion(qNumber) {
     if (question) {
-        question.innerText = christmasQuestions[qNumber].question;
+        question.innerText = `Question ${qNumber + 1} of ${qlength}: ${christmasQuestions[qNumber].question}`;
     }
-    answer1.removeAttribute('disabled');
-    answer2.removeAttribute('disabled');
-    answer3.removeAttribute('disabled');
-    answer4.removeAttribute('disabled');
-    answer5.removeAttribute('disabled');
+    // Ensure buttons are enabled
+    enableAnswerButtons();
 }
+
 
 /**
  * Function to load the answers to the question
@@ -123,30 +121,56 @@ function loadGameAnswer(qNumber) {
  * Checks if the user's answer is correct
  */
 function check(ansnum) {
+    // Disable buttons to prevent multiple answers
+    disableAnswerButtons();
+    
+    let correct = christmasQuestions[qNumber].correct;
+    if (ansnum === correct) {
+        scoreNumber++;
+        if (score) score.innerHTML = scoreNumber;
+        showFeedback(true);
+    } else {
+        showFeedback(false);
+    }
+
+    qNumber++;
     if (qNumber < christmasQuestions.length) {
-        let correct = christmasQuestions[qNumber].correct;
-        if (ansnum === correct) {
-            scoreNumber++;
-            if (score) score.innerHTML = scoreNumber;
-        }
-
-        // Increment the question number
-        qNumber++;
-
-        console.log("Current question number:", qNumber); // Debug log
-        console.log("Total questions length:", qlength);  // Debug log
-
-        if (qNumber === qlength) {
-            // End the game if it's the last question
-            console.log("End game function called."); // Debug log
-            endGameFunc();
-        } else {
-            // Load the next question
+        setTimeout(() => {
             loadGameQuestion(qNumber);
             loadGameAnswer(qNumber);
-        }
+            enableAnswerButtons();
+        }, 1000); // Wait 1 second before loading next question
+    } else {
+        setTimeout(endGameFunc, 1000);
     }
 }
+
+function disableAnswerButtons() {
+    answer1.setAttribute('disabled', 'true');
+    answer2.setAttribute('disabled', 'true');
+    answer3.setAttribute('disabled', 'true');
+    answer4.setAttribute('disabled', 'true');
+    answer5.setAttribute('disabled', 'true');
+}
+
+function enableAnswerButtons() {
+    answer1.removeAttribute('disabled');
+    answer2.removeAttribute('disabled');
+    answer3.removeAttribute('disabled');
+    answer4.removeAttribute('disabled');
+    answer5.removeAttribute('disabled');
+}
+
+function showFeedback(isCorrect) {
+    const feedback = document.createElement('div');
+    feedback.className = 'feedback';
+    feedback.innerText = isCorrect ? 'Correct!' : 'Wrong!';
+    heroText.appendChild(feedback);
+    setTimeout(() => {
+        feedback.remove();
+    }, 1000);
+}
+
 
 /**
  * Makes the play again section visible
